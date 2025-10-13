@@ -1,0 +1,7 @@
+require 'neonon.debug'
+require 'neonon.autopairs'
+require 'neonon.gitsigns'
+require 'neonon.health'
+require 'neonon.indent_line'
+require 'neonon.lint'
+require 'neonon.neo-tree'
