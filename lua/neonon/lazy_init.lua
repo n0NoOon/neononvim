@@ -29,4 +29,7 @@ require('lazy').setup('neonon.lazy', {
       lazy = '💤 ',
     },
   },
+  {
+    'NMAC427/guess-indent.nvim',
+  },
 })
