@@ -1,3 +1,5 @@
+require 'neonon'
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -34,6 +36,9 @@ end)
 
 -- Enable break indent
 vim.o.breakindent = true
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.expandtab = true
 
 -- Save undo history
 vim.o.undofile = true
