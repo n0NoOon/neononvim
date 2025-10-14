@@ -6,4 +6,7 @@ return {
     main = 'ibl',
     opts = {},
   },
+  {
+    'NMAC427/guess-indent.nvim',
+  },
 }
