@@ -11,7 +11,9 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
-require('lazy').setup('neonon.lazy', {
+require('lazy').setup {
+  spec = 'neonon.lazy',
+  'NMAC428/guess-indent.nvim',
   ui = {
     icons = vim.g.have_nerd_font and {} or {
       cmd = '⌘',
@@ -29,7 +31,5 @@ require('lazy').setup('neonon.lazy', {
       lazy = '💤 ',
     },
   },
-  {
-    'NMAC427/guess-indent.nvim',
-  },
-})
+}
+-- vim: ts=2 sts=2 sw=2 et

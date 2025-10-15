@@ -11,9 +11,9 @@ require 'neonon.lazy_init'
 
 local autocmd = vim.api.nvim_create_augroup
 
-function R(name)
-  require('plenary.reload').reload_module(name)
-end
+--function R(name)
+--  require('plenary.reload').reload_module(name)
+--end
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -22,6 +22,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.hl.on_yank()
   end,
 })
-
+print 'autocommand executed.'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
